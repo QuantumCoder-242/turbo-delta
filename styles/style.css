@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap");
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1707058666063-f15349d30363?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDc5ODI5MjJ8&ixlib=rb-4.0.3&q=85);
+  
+  
+  font-family: 'Roboto', sans-serif;
+  background-size: cover;
+  bakground-position: center;
+  display:flex;
+  flex-direction: column;
+  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+
+
+h3,
+label,
+p {
+  background-color: #fff;
+}
+
+h3 {
+  color: green;
+  /*   font-family: "Roboto", sans-serif; */
+  font-family: "Quicksand", sans-serif;
+}
+
+.card {
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  text-align: center;
+  padding: 10px;
+  width: 800px;
+   background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  color: #333; 
+}
+
+.navbar, .footer {
+  padding-top: 0.5rem; 
+  padding-bottom: 0.5rem; 
+}
+
+.card-body label {
+  background-color: transparent; 
+  
+}
+
+
+
+h1,h2,h3 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+html {
+  height: 100%;
+}
+
+
+.footer {
+  margin-top: auto; 
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+
+#btnGetFacts {
+  margin-top: 20px;
+  margin-bottom: 10px; 
+}
+
+
+.navbar {
+  height: 80px; 
+  line-height: 80px; 
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  padding: 0 0px; 
+}
+
+
+.navbar-toggler {
+  margin-right: 0;
+}
+
+
+#coolNameFactsOutput p {
+  background-color: transparent;
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+}
+
+
+#userName {
+  width: 50%; 
+  margin: 0 auto; 
+}
+
+
+.footer .fa {
+  font-size: 24px; 
+  color: #ffffff; 
+  margin-right: 20px; 
+  transition: transform 0.2s; 
+}
+
+.footer .fa:hover {
+  transform: scale(1.1); 
+  color: #ddd; /
+}
+
+
+
+
