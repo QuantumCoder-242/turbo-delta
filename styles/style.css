@@ -16,7 +16,6 @@ body {
 }
 
 
-
 h3,
 label,
 p {
@@ -35,25 +34,20 @@ h3 {
   text-align: center;
   padding: 10px;
   width: 800px;
-   background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
-  border-radius: 8px; /* Optional: Adds rounded corners */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth */
-  color: #333; /* Dark text color for readability */
+   background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  color: 
 }
 
 .navbar, .footer {
-  padding-top: 0.5rem; /* Reduce the top padding */
-  padding-bottom: 0.5rem; /* Reduce the bottom padding */
+  padding-top: 0.5rem; 
+  padding-bottom: 0.5rem; 
 }
 
 .card-body label {
-  background-color: transparent; /* Ensures the label has no different background */
-  /* Add other styling rules as necessary, such as font size, color, etc. */
+  background-color: transparent; 
 }
-
-
-
-
 
 
 h1,h2,h3 {
@@ -66,9 +60,8 @@ html {
 }
 
 
-
 .footer {
-  margin-top: auto; /* This pushes the footer to the bottom of the flex container */
+  margin-top: auto; 
   background-color: #343a40;
   color: white;
   text-align: center;
@@ -78,20 +71,18 @@ html {
 
 #btnGetFacts {
   margin-top: 20px;
-  margin-bottom: 10px; /* Adjust the value as needed */
+  margin-bottom: 10px; 
 }
 
 
 .navbar {
-  height: 80px; /* Example height, adjust as needed */
-  line-height: 80px; /* Adjust line height to vertically center the navbar content */
+  height: 80px; 
+  line-height: 80px; 
 }
 
 .navbar-brand, .navbar-nav .nav-link {
-  padding: 0 0px; /* Adds padding to the left and right */
-}
+  padding: 0 0px; 
 
-/* Adjust the margin for navbar-toggler for proper alignment */
 .navbar-toggler {
   margin-right: 0;
 }
@@ -99,28 +90,27 @@ html {
 
 #coolNameFactsOutput p {
   background-color: transparent;
-  margin-top: 10px; /* Adjust the value as needed */
-  margin-bottom: 10px; /* Adjust the value as needed for consistent spacing */
+  margin-top: 10px; 
+  margin-bottom: 10px; 
 }
 
 
 #userName {
-  width: 50%; /* Adjust this value as needed */
-  margin: 0 auto; /* Centers the input */
+  width: 50%; 
+  margin: 0 auto; 
 }
 
 
-/* Social Media Icons Styling */
 .footer .fa {
-  font-size: 24px; /* Adjust the size of icons */
-  color: #ffffff; /* Icon color */
-  margin-right: 20px; /* Space between icons */
-  transition: transform 0.2s; /* Smooth transition for hover effect */
+  font-size: 24px; 
+  color: #ffffff; 
+  margin-right: 20px; 
+  transition: transform 0.2s;
 }
 
 .footer .fa:hover {
-  transform: scale(1.1); /* Slightly enlarge icons on hover */
-  color: #ddd; /* Change color on hover for feedback */
+  transform: scale(1.1); 
+  color:
 }
 
 
