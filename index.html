@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>cumbie-lab-delta</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="./styles/style.css" />
-  </head>
-  <body class="container-fluid">
+<head>
+  <meta charset="UTF-8" />
+  <title>Navraj-delta-lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="container-fluid">
+  <div class="content-wrapper">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">barry's fun name facts</a>
+        <a class="navbar-brand" href="#">Navraj's fun name facts</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -28,108 +31,72 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
-            <!-- <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/barrycumbie/turbo-guacamole/">See the Code!</a>
-          </li> 
+            <!-- Navigation items -->
           </ul>
         </div>
       </div>
     </nav>
 
     <div class="row">
-      <!-- my lorem ipsum card -->
-      <!-- <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla
-              malesuada pellentesque elit eget gravida cum. Aenean sed
-              adipiscing diam donec adipiscing. Arcu vitae elementum curabitur
-              vitae nunc sed velit dignissim sodales. Consequat mauris nunc
-              congue nisi vitae suscipit tellus mauris. Sit amet risus nullam
-              eget felis eget nunc lobortis mattis. A scelerisque purus semper
-              eget.
-            </p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="./styles/style.css" class="card-link"
-              >Another link to sytles</a
-            >
-          </div>
-        </div>
-      </div> -->
+      <div class="flex-container">
+        <div class="row">
+          <div class="col-sm-8 offset-sm-2">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Cool Name Facts</h4>
+                <p class="card-text">Give me your Name for Some Cool Facts!</p>
 
-      <!-- this is my github link card -->
-      <!-- <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">GitHub Link Demo</h4>
-            <p class="card-text">
-              Here is a guide on how to link to your REPO (Source Code) & your
-              APP (Deployment)
-            </p>
+                <label for="userName" class="form-label">What is Your Name?</label>
+                <input
+                  type="text"
+                  id="userName"
+                  class="form-control custom-input"
+                  name="userName"
+                  placeholder="Enter your name here"
+                />
+                <button id="btnGetFacts" class="btn btn-secondary">
+                  get cool facts
+                </button>
 
-            <a
-              href="https://github.com/barrycumbie/effective-enigma"
-              class="card-link"
-              target="affiliate"
-              >View the REPO</a
-            >
+                <br />
 
-            <a
-              href="https://barrycumbie.github.io/effective-enigma/"
-              target="affiliate"
-              class="card-link"
-              >View the APP</a
-            >
-          </div>
-        </div>
-      </div> -->
-
-      <!-- this is my name game card -->
-      <div class="col-sm-8 offset-sm-2">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">Cool Name Facts</h4>
-            <p class="card-text">gimme your name for some cool facts!</p>
-
-            <label for="userName" class="form-label">what ur name?</label>
-            <input
-              type="text"
-              id="userName"
-              class="form-control"
-              name="userName"
-            />
-            <button id="btnGetFacts" class="btn btn-secondary">
-              get cool facts
-            </button>
-
-            <br />
-
-            <span id="coolNameFactsOutput"> </span>
-            <img id="coolNameImg" />
-            <!-- <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a> -->
+                <span id="coolNameFactsOutput"> </span>
+                <img id="coolNameImg" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div> <!-- End of content-wrapper -->
 
-    <footer class="footer mt-auto py-3 bg-light">
-      <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+      <p class="text-muted">&copy; 2024 Navraj's Fun Name Facts. All rights reserved.</p>
+      <div>
+        <a href="https://www.facebook.com/" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/?lang=en" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="www.linkedin.com/in/navraj242" class="text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
       </div>
-    </footer>
+      <div class="mt-2">
+        <a href="https://policies.google.com/privacy?hl=en-US" class="text-muted">Privacy Policy</a> |
+        <a href="https://policies.google.com/privacy?hl=en-US" class="text-muted">Terms of Use</a> |
+        <a href="#" class="text-muted">Contact Us</a>
+      </div>
+    </div>
+  </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="./scripts/script.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="./scripts/script.js"></script>
+</body>
 </html>
