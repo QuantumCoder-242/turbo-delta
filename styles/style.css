@@ -16,6 +16,7 @@ body {
 }
 
 
+
 h3,
 label,
 p {
@@ -37,7 +38,7 @@ h3 {
    background-color: rgba(255, 255, 255, 0.8); 
   border-radius: 8px; 
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-  color: 
+  color: #333; 
 }
 
 .navbar, .footer {
@@ -47,7 +48,9 @@ h3 {
 
 .card-body label {
   background-color: transparent; 
+  
 }
+
 
 
 h1,h2,h3 {
@@ -82,6 +85,8 @@ html {
 
 .navbar-brand, .navbar-nav .nav-link {
   padding: 0 0px; 
+}
+
 
 .navbar-toggler {
   margin-right: 0;
@@ -105,12 +110,12 @@ html {
   font-size: 24px; 
   color: #ffffff; 
   margin-right: 20px; 
-  transition: transform 0.2s;
+  transition: transform 0.2s; 
 }
 
 .footer .fa:hover {
   transform: scale(1.1); 
-  color:
+  color: #ddd; /
 }
 
 

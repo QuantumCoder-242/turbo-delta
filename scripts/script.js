@@ -2,15 +2,14 @@ $(document).ready(function () {
   console.log("doc is ready");
 
   $("#btnGetFacts").click(function () {
-    $("#coolNameFactsOutput").html(""); // Clear previous output
-    let userName = $("#userName").val().trim().toLowerCase(); // Convert to lowercase for consistent processing
+    $("#coolNameFactsOutput").html(""); 
+    let userName = $("#userName").val().trim().toLowerCase(); 
 
     if (userName) {
-      // Generate and display cool name facts
       let coolFacts = generateCoolNameFacts(userName);
       $("#coolNameFactsOutput").html(coolFacts);
 
-      // Generate and display an anagram of the user's name
+     
       let anagram = generateAnagram(userName);
       let anagramMessage = "<p>A fun <strong>anagram</strong> of your name is " + anagram + "</p>";
       $("#coolNameFactsOutput").append(anagramMessage);
@@ -57,7 +56,7 @@ function generateAnagram(name) {
   let arr = name.split('');
   for (let i = arr.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]]; // Swap elements
+    [arr[i], arr[j]] = [arr[j], arr[i]]; 
   }
   return arr.join('');
 }
