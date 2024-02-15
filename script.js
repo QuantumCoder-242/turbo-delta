@@ -1,84 +1,88 @@
 $(document).ready(function () {
   console.log("doc is ready");
 
-  //let revName;
-
   $("#btnGetFacts").click(function () {
-    $("#coolNameFactsOutput").html();
-    // handle it if input is blank
+    $("#coolNameFactsOutput").html(""); // Clear previous output
+    let userName = $("#userName").val().trim().toLowerCase(); // Convert to lowercase for consistent processing
 
-    let userName = $("#userName").val();
-    console.log("user name = ", userName);
-    //let coolFacts = generateCoolNameFacts(userName);
+    if (userName) {
+      // Generate and display cool name facts
+      let coolFacts = generateCoolNameFacts(userName);
+      $("#coolNameFactsOutput").html(coolFacts);
 
-    console.log("name length f/n = ", nameLength(userName));
+      // Generate and display an anagram of the user's name
+      let anagram = generateAnagram(userName);
+      let anagramMessage = "<p>A fun <strong>anagram</strong> of your name is " + anagram + "</p>";
+      $("#coolNameFactsOutput").append(anagramMessage);
 
-    console.log("you clicked the button");
-    //console.log("from ln 12", generateCoolNameFacts(userName));
+      
+    } else {
+      $("#coolNameFactsOutput").html("Please enter your <strong>name</strong> to get cool facts!");
 
-    $("#coolNameFactsOutput").html(nameLength(userName));
-
-    // $("#coolNameFactsOutput").html(getSpiritAnimal(userName));
-
-    // $("#coolNameFactsOutput").html(
-    //   '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Y-YVLipceJt1DMU3Bs8uIAHaFj%26pid%3DApi&f=1">'
-    // );
-
-    // $("#coolNameImg").attr(
-    //   "src",
-    //   "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Y-YVLipceJt1DMU3Bs8uIAHaFj%26pid%3DApi&f=1"
-    // );
+    }
   });
 });
 
 function generateCoolNameFacts(userName) {
-  let coolFacts = "";
-
-  coolFacts = nameLength(userName);
-  coolFacts += " <br> " + nameStart(userName);
-  coolFacts += "<h3> " + nameEnd(userName) + "</h3>";
-  coolFacts += "<h2>" + reverseName(userName) + "</h2>";
-
-  console.log("initialized the'm coolFacts variable: " + coolFacts);
-
+  let coolFacts = nameLength(userName);
+  coolFacts += "<br>" + nameStart(userName);
+  coolFacts += "<br>" + nameEnd(userName);
+  coolFacts += "<br><h3>" + reverseName(userName) + "</h3>";
+  coolFacts += "<br>" + vowelCount(userName);
+  coolFacts += "<br>" + consonantCount(userName);
+  coolFacts += "<br>" + isPalindrome(userName);
+  
   return coolFacts;
 }
 
 function nameLength(name) {
-  //named, not anonymous. Name = nameLength
-  //parameters, one = j
-  //void if it has no return value
-
   return "Your name is " + name.length + " letters long!";
 }
 
 function nameStart(name) {
-  return "the first letter of your name is " + name[0];
+  return "The first letter of your name is " + name[0].toUpperCase();
 }
 
 function nameEnd(name) {
   let lastIndex = name.length - 1;
-
-  return "the last letter of your name is " + name[lastIndex];
+  return "The last letter of your name is " + name[lastIndex].toUpperCase();
 }
 
 function reverseName(name) {
-  // let arrSomeArray = [1, "cat", "Susan", [j, "stuff"]];
-
-  let arrName = name.split();
-
-  revName = arrName.reverse();
+  return "Your name in reverse is: " + name.split('').reverse().join('');
 }
 
-function getSpiritAnimal(x) {
-  //flow control: case switch, loop, if/then
-
-  if (x.length == 3) {
-    //execute some code
-    return "you are slug!";
-  } else if (x.length > 10) {
-    return "u spirit animal is iguana";
-  } else {
-    return "u are nothing.";
+function generateAnagram(name) {
+  let arr = name.split('');
+  for (let i = arr.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]]; // Swap elements
   }
+  return arr.join('');
 }
+
+function vowelCount(name) {
+  const vowels = 'aeiou';
+  let count = 0;
+  for (let letter of name) {
+    if (vowels.includes(letter)) count++;
+  }
+  return "Number of <strong>vowels</strong> in your name is " + count;
+}
+
+function consonantCount(name) {
+  const consonants = 'bcdfghjklmnpqrstvwxyz';
+  let count = 0;
+  for (let letter of name) {
+    if (consonants.includes(letter)) count++;
+  }
+  return "Number of <strong>consonants</strong> in your name is " + count;
+}
+
+function isPalindrome(name) {
+  let reversedName = name.split('').reverse().join('');
+  return name === reversedName ? "Your name is a <strong>palindrome!</strong>" : "Your name is <strong>not a palindrome</strong>.";
+}
+
+
+
