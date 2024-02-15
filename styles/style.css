@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap");
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1707058666063-f15349d30363?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDc5ODI5MjJ8&ixlib=rb-4.0.3&q=85);
+  
+  
+  font-family: 'Roboto', sans-serif;
+  background-size: cover;
+  bakground-position: center;
+  display:flex;
+  flex-direction: column;
+  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+
+
+h3,
+label,
+p {
+  background-color: #fff;
+}
+
+h3 {
+  color: green;
+  /*   font-family: "Roboto", sans-serif; */
+  font-family: "Quicksand", sans-serif;
+}
+
+.card {
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  text-align: center;
+  padding: 10px;
+  width: 800px;
+   background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth */
+  color: #333; /* Dark text color for readability */
+}
+
+.navbar, .footer {
+  padding-top: 0.5rem; /* Reduce the top padding */
+  padding-bottom: 0.5rem; /* Reduce the bottom padding */
+}
+
+.card-body label {
+  background-color: transparent; /* Ensures the label has no different background */
+  /* Add other styling rules as necessary, such as font size, color, etc. */
+}
+
+
+
+
+
+
+h1,h2,h3 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+html {
+  height: 100%;
+}
+
+
+
+.footer {
+  margin-top: auto; /* This pushes the footer to the bottom of the flex container */
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+
+#btnGetFacts {
+  margin-top: 20px;
+  margin-bottom: 10px; /* Adjust the value as needed */
+}
+
+
+.navbar {
+  height: 80px; /* Example height, adjust as needed */
+  line-height: 80px; /* Adjust line height to vertically center the navbar content */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  padding: 0 0px; /* Adds padding to the left and right */
+}
+
+/* Adjust the margin for navbar-toggler for proper alignment */
+.navbar-toggler {
+  margin-right: 0;
+}
+
+
+#coolNameFactsOutput p {
+  background-color: transparent;
+  margin-top: 10px; /* Adjust the value as needed */
+  margin-bottom: 10px; /* Adjust the value as needed for consistent spacing */
+}
+
+
+#userName {
+  width: 50%; /* Adjust this value as needed */
+  margin: 0 auto; /* Centers the input */
+}
+
+
+/* Social Media Icons Styling */
+.footer .fa {
+  font-size: 24px; /* Adjust the size of icons */
+  color: #ffffff; /* Icon color */
+  margin-right: 20px; /* Space between icons */
+  transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.footer .fa:hover {
+  transform: scale(1.1); /* Slightly enlarge icons on hover */
+  color: #ddd; /* Change color on hover for feedback */
+}
+
+
+
+
